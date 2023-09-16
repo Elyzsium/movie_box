@@ -1,6 +1,6 @@
 import getMovie from "@/lib/get-movie";
 import getVideo from "@/lib/get-video";
-import { Credits, Movies, MoviesResult, Video, Videos } from "@/typings";
+import { Credits, Movies, MoviesResult, Video, Videos } from "@/constants/typings";
 import { Metadata } from "next";
 import VideoPlayer from "../components/videoPlayer";
 import MovieDetails from "../components/movieDetails";
