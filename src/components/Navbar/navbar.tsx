@@ -34,9 +34,9 @@ const Navbar = () => {
           <SearchInput />
           <div className="flex items-center gap-6">
             <p className="font-medium text-white">Sign in</p>
-            {/* <div className="p-2 rounded-full bg-rose-700">
+            <div className="p-2 rounded-full bg-rose-700">
               <Image width={24} height={24} alt="Menu" src="/images/menu.svg" />
-            </div> */}
+            </div>
           </div>
         </div>
       </Container>
