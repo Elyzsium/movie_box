@@ -1,4 +1,4 @@
-import { Credits, Movies } from "@/typings";
+import { Credits, Movies } from "@/constants/typings";
 import { Calendar, ChevronRight, Clock3, Eye, List, Star } from "lucide-react";
 import React from "react";
 import SimilarCard from "./similarCard";

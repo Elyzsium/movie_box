@@ -1,6 +1,6 @@
 "use client";
 
-import { Video } from "@/typings";
+import { Video } from "@/constants/typings";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 

@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import MovieCard from "@/components/ui/card";
-import { Movies } from "@/constants/typings"
+import { Movies } from "../constants/typings"
 import getMovies from "@/lib/get-movies";
 import { Suspense } from "react";
 import Loading from "@/components/ui/loading";
