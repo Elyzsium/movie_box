@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import BannerDetails from "@/components/Home/details";
-import { MoviesResult } from "@/typings";
+import { MoviesResult } from "@/constants/typings";
 
 const Banner = ({ movie }: { movie: MoviesResult }) => {
   function truncateOverview(text: string) {

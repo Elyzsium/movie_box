@@ -1,5 +1,5 @@
 import { getGenreNames } from "@/lib/get-genre";
-import { MoviesResult } from "@/typings";
+import { MoviesResult } from "@/constants/typings";
 import { Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,7 @@ const MovieCard = ({ Movie }: { Movie: MoviesResult }) => {
     <Link href={`/movies/${Movie.id}`}>
       <div
         data-testid="movie-card"
-        className="flex group relative space-y-2 flex-col"
+        className="relative flex flex-col space-y-2 group"
       >
         <Image
           data-testid="movie-poster"
@@ -22,7 +22,7 @@ const MovieCard = ({ Movie }: { Movie: MoviesResult }) => {
           height={370}
         />
         {Movie.media_type === "tv" && (
-          <div className="absolute text-gray-300 py-1 px-3 rounded-full top-3 left-2 glassmorphism">
+          <div className="absolute px-3 py-1 text-gray-300 rounded-full top-3 left-2 glassmorphism">
             <span className="text-xs md:text-sm">TV Series</span>
           </div>
         )}
@@ -30,7 +30,7 @@ const MovieCard = ({ Movie }: { Movie: MoviesResult }) => {
           <Heart className="w-4 h-4" />
         </div>
         <div className="max-w-[150px] md:max-w-[250px]">
-          <span className="text-muted-foreground text-xs">
+          <span className="text-xs text-muted-foreground">
             USA,{" "}
             <span data-testid="movie-release-date">
               {Movie.release_date || "To be announced"}
@@ -42,12 +42,12 @@ const MovieCard = ({ Movie }: { Movie: MoviesResult }) => {
           >
             {Movie.title || Movie.name}
           </h4>
-          <div className="flex items-center gap-1 justify-between">
-            <span className="flex max-md:text-xs font-semibold items-center gap-1 md:gap-2">
+          <div className="flex items-center justify-between gap-1">
+            <span className="flex items-center gap-1 font-semibold max-md:text-xs md:gap-2">
               <Image src="images/tmdb.svg" alt="imdb" width={35} height={17} />
               860 / 100
             </span>
-            <span className="flex max-md:text-xs font-semibold items-center gap-1 md:gap-2">
+            <span className="flex items-center gap-1 font-semibold max-md:text-xs md:gap-2">
               <Image
                 src="images/tomato.svg"
                 alt="rotten tomatoes"
@@ -57,7 +57,7 @@ const MovieCard = ({ Movie }: { Movie: MoviesResult }) => {
               97%
             </span>
           </div>
-          <span className="text-muted-foreground text-xs font-medium">
+          <span className="text-xs font-medium text-muted-foreground">
             {genres.join(", ")}
           </span>
         </div>

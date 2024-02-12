@@ -29,14 +29,14 @@ const Navbar = () => {
   return (
     <header className={cn("fixed z-10 w-full", isPageScrolled && "glassmorphism")}>
       <Container>
-        <div className="flex items-center w-full py-4 justify-between">
+        <div className="flex items-center justify-between w-full py-4">
           <Logo textColor="text-white" />
           <SearchInput />
           <div className="flex items-center gap-6">
             <p className="font-medium text-white">Sign in</p>
-            <div className="bg-rose-700 rounded-full p-2">
+            {/* <div className="p-2 rounded-full bg-rose-700">
               <Image width={24} height={24} alt="Menu" src="/images/menu.svg" />
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>
