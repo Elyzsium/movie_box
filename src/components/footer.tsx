@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="gap-2">
             <p className="text-sm text-muted-foreground">
-              &copy; 2021 MovieBox by Adriana Eka Prayudha{" "}
+              &copy; 2023 MovieBox by Elysium{" "}
             </p>
            
           </div>
